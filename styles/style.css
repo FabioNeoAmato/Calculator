@@ -1,27 +1,85 @@
-body
-{
-    background-color: #333333;
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  body {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+  .visio
+  {
+    
+    height: 200px;
+    background-color:gainsboro;
+    border: solid 2px black;
+    border-radius: 20px;
+    margin:5px;
+    
+  }
 
-}
-
-h1
-{
-    text-align: center;
-}
-
-
-table
-{
-    background-color: white;
-    width: 150px;
-    height: 40px;
+  
+  .numeros
+  {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    
+    
     
 
-}
-button
-{
-    width: 50px;
-    height: 50px;
+  }
+  button
+  {
+    margin: 3px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: #C9CACC;
+    cursor: pointer;
+    
+  }
+  button:hover
+  {
+    background-color: white;
+  }
+  
+  .calculator
+  {
+    background-color: black;
+    border: 5px solid ;
     border-radius: 20px;
-}
+  }
+  .A 
+  {
+    background-color: orange;
+  }
+  .C
+  {
+    background-color: orange;
+  }
+  .plus
+  {
+    background-color: orange;
+  }
+  .moins
+  {
+    background-color: orange;
+  }
+  .Multi
+  {
+    background-color: orange;
+
+  }
+  .division
+  {
+    background-color: orange;
+  }
+
+  
