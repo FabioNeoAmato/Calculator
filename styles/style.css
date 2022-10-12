@@ -19,7 +19,6 @@
     height: 200px;
     background-color:gainsboro;
     border: solid 2px black;
-    border-radius: 20px;
     margin:5px;
     
   }
@@ -72,7 +71,7 @@
   {
     background-color: orange;
   }
-  .Multi
+  .multi
   {
     background-color: orange;
 
