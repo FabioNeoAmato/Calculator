@@ -1,15 +1,31 @@
-let btns = Array.from(document.querySelectorAll('button'));
-console.log(btns);
-const display = document.querySelector(".visio");
-btns.forEach('button') => { 'click', ()  }
-console.log(btns);
+let buttons = Array.from(document.querySelectorAll('button'));
+console.log(buttons);
 
-function hello () {
-    display.textContent = 'Hello';
-    console.log('Bonjour');
-}
+let visio = document.getElementById('visio')
+console.log(visio);
 
-btns.addEventListener('click', hello)
-console.log(btns);
+buttons.map( button => {
+    button.addEventListener('click', (e) => {
+        switch(e.target.innerText){
+            case 'C':
+                visio.innerText = '';
+                break;
+            case '=':
+                try{
+                    visio.innerText = eval(visio.innerText);
+                } catch {
+                    visio.innerText = "Error"
+                }
+                break;
+            case 'A':
+                if (visio.innerText){
+                   visio.innerText = visio.innerText.slice(0, -1);
+                }
+                break;
+            default:
+                visio.innerText += e.target.innerText;
+        }
+    });
+});
 
 

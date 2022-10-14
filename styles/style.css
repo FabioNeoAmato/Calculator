@@ -10,21 +10,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #555555;
     
    
   }
-  .visio
+  #visio
   {
     
     height: 200px;
     background-color:gainsboro;
     border: solid 2px black;
+    border-radius: 10px;
     margin:5px;
+    font-size: 2rem;
+    padding: 5px;
     
   }
 
   
-  .numeros
+  .buttons
   {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
@@ -36,10 +40,11 @@
   }
   button
   {
-    margin: 3px;
+    margin: 5px;
     border-radius: 30px;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #C9CACC;
     cursor: pointer;
     
@@ -47,21 +52,25 @@
   button:hover
   {
     background-color: white;
+    
   }
   
   .calculator
   {
     background-color: black;
-    border: 5px solid ;
+    box-shadow: 5px 10px 18px #e4e4e4;;
+    border: 15px solid ;
     border-radius: 20px;
   }
   .A 
   {
     background-color: orange;
+    font-weight: bolder;
   }
   .C
   {
     background-color: orange;
+    font-weight: bolder;
   }
   .plus
   {
